@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./pages/Home/Home";
-import Signin from "./pages/Signin/register";
+import Signin from "./pages/Signin/Register";
 
 import "./style.css";
 

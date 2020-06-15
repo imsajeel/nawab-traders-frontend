@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../../images/logo150.jpg";
 import "./Signin.css";
 
-const register = () => {
+const Register = () => {
   return (
     <div className="backcolor">
       <div className="signinPage">
@@ -33,4 +33,4 @@ const register = () => {
   );
 };
 
-export default register;
+export default Register;

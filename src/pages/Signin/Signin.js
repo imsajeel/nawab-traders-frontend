@@ -1,16 +1,36 @@
 import React from "react";
 import Logo from "../../images/logo150.jpg";
+import AlertBox from "../components/AlertBox/AlertBox";
+
+import dbAPI from "../../database/dbAPI";
+
 import "./Signin.css";
 
-const Signin = () => {
+const { url } = dbAPI.signinAPI;
+console.log(url);
+
+const Signin = ({ changeHandler }) => {
   return (
     <div className="backcolor">
+      <AlertBox status="success" message="User already exist" />
       <div className="signinPage">
         <div className="content">
           <form className="signinForm">
-            <img src={Logo} alt="Nawab Traders" />
-            <input type="text" placeholder="Enter your username" required />
-            <input type="password" placeholder="Enter your password" required />
+            <img src={Logo} alt="Logo" />
+            <input
+              type="text"
+              placeholder="Enter your username"
+              id="username"
+              name="username"
+              required
+            />
+            <input
+              type="password"
+              placeholder="Enter your password"
+              id="password"
+              name="password"
+              required
+            />
             <button type="submit" className="primary">
               Sign in
             </button>

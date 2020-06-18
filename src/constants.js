@@ -1,0 +1,3 @@
+// export const CHANGE_SEARCHFIELD = "CHANGE_SEARCHFIELD";
+
+export const CHANGE_SIGNIN = "CHANGE_SIGNIN";

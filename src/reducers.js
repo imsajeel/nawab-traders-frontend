@@ -16,7 +16,7 @@ const initialState = {
 //   }
 // };
 
-export const searchRobots = (state = initialState, action = {}) => {
+export const signIn = (state = initialState, action = {}) => {
   switch (action.type) {
     case CHANGE_SIGNIN:
       return Object.assign({}, state, { signedInAS: action.payload });
